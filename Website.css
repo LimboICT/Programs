@@ -1,0 +1,112 @@
+@font-face {
+ font-family: 'Roboto';
+ src: url('Roboto-Regular.woff2') format('woff2'),
+ url('Roboto-Regular.woff') format('woff'),
+ url('Roboto-Bold.woff2') format('woff2'),
+ url('Roboto-Bold.woff') format('woff');
+ font-weight: 400;
+ font-style: normal;
+ }
+
+ body {
+ margin: 0;
+ font-family: 'Roboto', sans-serif;
+ color: #ffffff;
+ background-color: #1e1e1e;
+ line-height: 1.6;
+ user-select: none;
+ }
+
+ .header-container {
+ max-width: 900px; 
+ margin: 40px auto 0;
+ padding: 0 20px; 
+ }
+
+ @keyframes colorChange {
+ 0% { color: #00bfff; }
+ 50% { color: #ffffff; }
+ 100% { color: #00bfff; }
+ }
+
+ .header-container h1 {
+ text-align: center;
+ padding: 20px;
+ border: 3px solid #00bfff;
+ border-radius: 8px;
+ margin-bottom: 40px;
+ animation: colorChange 4s infinite;
+ transition: border-color 0.3s ease;
+ }
+
+ .header-container h1:hover {
+ border-color: #ffffff;
+ }
+
+ .btn-group {
+ text-align: center;
+ margin: 20px 0;
+ }
+
+ .btn-group button {
+ background-color: #333;
+ border: none;
+ color: white;
+ padding: 15px 30px;
+ cursor: pointer;
+ margin: 0 10px;
+ border-radius: 5px;
+ box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+ transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease, color 0.3s ease;
+ }
+
+ .btn-group button:hover {
+ background-color: #555;
+ transform: translateY(-2px);
+ box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+ color: #00bfff;
+ }
+
+ section {
+ max-width: 800px;
+ margin: 20px auto;
+ padding: 40px;
+ background-color: #282828;
+ border-radius: 10px;
+ margin-bottom: 40px;
+ box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+ }
+
+ section h1 {
+ margin-top: 0;
+ color: #00bfff;
+ border: 2px solid #00bfff;
+ padding: 10px;
+ border-radius: 5px;
+ text-align: center;
+ transition: color 0.3s ease, border-color 0.3s ease;
+ }
+
+ section h1:hover {
+ color: #ffffff;
+ border-color: #ffffff;
+ }
+
+ section p {
+ text-align: left;
+ }
+
+ footer {
+ text-align: center;
+ padding: 20px;
+ background-color: #333;
+ color: #ffffff;
+ position: relative;
+ bottom: 0;
+ width: 100%;
+ transition: background-color 0.3s ease;
+ }
+
+ footer:hover {
+ background-color: #444;
+ }
