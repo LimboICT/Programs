@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Introduction to Java</title>
+    <style>
+	    html {
+		    scroll-behavior: smooth;
+		}
+	
+        body {
+            margin: 0;
+			font-size: 18px;
+			font-family: 'Trebuchet MS', sans-serif;
+            color: #ffffff;
+            background-color: #1e1e1e;
+            line-height: 1.6;
+            user-select: none;
+        }
+
+        .header-container {
+            max-width: 900px; 
+            margin: 40px auto 0;
+            padding: 0 20px; 
+        }
+
+        @keyframes colorChange {
+            0% { color: #00bfff; }
+            50% { color: #ffffff; }
+            100% { color: #00bfff; }
+        }
+
+        .header-container h1 {
+            text-align: center;
+            padding: 20px;
+            border: 3px solid #00bfff;
+            border-radius: 8px;
+            margin-bottom: 40px;
+            animation: colorChange 4s infinite;
+            transition: border-color 0.3s ease;
+        }
+
+        .header-container h1:hover {
+            border-color: #ffffff;
+        }
+
+        .btn-group {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .btn-group button {
+            background-color: #333;
+			font-family: 'Courier New', monospace;
+            border: none;
+            color: white;
+            padding: 15px 30px;
+            cursor: pointer;
+            margin: 0 10px;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.3s ease, transform 0.2s ease, color 0.3s ease;
+        }
+
+        .btn-group button:hover {
+            background-color: #555;
+            transform: translateY(-2px);
+            color: #00bfff;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 40px;
+            background-color: #282828;
+            border-radius: 10px;
+            margin-bottom: 40px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        section h1 {
+            margin-top: 0;
+            color: #00bfff;
+            border: 2px solid #00bfff;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+            transition: color 0.3s ease, border-color 0.3s ease;
+        }
+
+        section h1:hover {
+            color: #ffffff;
+            border-color: #ffffff;
+        }
+
+        section p {
+            text-align: left;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: #ffffff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            transition: background-color 0.3s ease;
+        }
+
+        footer:hover {
+            background-color: #444;
+        }
+    </style>
+</head>
+<body>
+    <div class="header-container">
+        <h1>Introduction to Java</h1>
+    </div>
+    <div class="btn-group">
+        <button onclick="document.getElementById('founder').scrollIntoView();"><b>Founder</b></button>
+        <button onclick="document.getElementById('history').scrollIntoView();"><b>History</b></button>
+        <button onclick="document.getElementById('about').scrollIntoView();"><b>About</b></button>
+        <button onclick="document.getElementById('syntax').scrollIntoView();"><b>Syntax</b></button>
+    </div>
+
+    <section id="founder">
+        <h1>Founder</h1>
+		<h2>James Gosling - founder of java</h2>
+		<p><b>Currently, Java is used in internet programming, mobile devices, games, e-business solutions, etc.</b></p>
+		<p>James Gosling OC (born 19 May 1955) is a Canadian computer scientist, best known as the founder and lead designer behind the Java programming language. Gosling was elected a member of the National Academy of Engineering in 2004 for the conception and development of the architecture for the Java programming language and for contributions to window systems.</p>
+    </section>
+
+    <section id="history">
+        <h1>History</h1>
+		<p><b>Following are given significant points that describe the history of Java.</b></p>
+		<p>It was originally developed by James Gosling at Sun Microsystems. It was released in May 1995 as a core component of Sun's Java platform. The original and reference implementation Java compilers, virtual machines, and class libraries were originally released by Sun under proprietary licenses.</p>
+		<p>In June 1991, James Gosling, Mike Sheridan, and Patrick Naughton started work on the Java language. The Green Team is a tiny group of solar engineers. It was first created for tiny embedded systems found in set-top boxes and other electronic appliances.</p>
+		<p>The file extension was.gt, and James Gosling dubbed it "Greentalk" to start. In 1995, Oak was renamed as "Java" because it was already a trademark by Oak Technologies. Following that, it was created as a component of the Green project and given the name Oak. Why Oak? Many nations, including the United States, France, Germany, and Rome, have designated oaks as their national trees, representing strength.</p>
+    </section>
+
+    <section id="about">
+        <h1>About</h1>
+        <p><b>Java is a high-level, object-oriented programming language that's independent of the platform. Hence, programs developed in Java can be executed on any platform supporting Java without recompilation. Sun Microsystems came up with Java in 1995, now owned by Oracle, largely used for enterprise applications, mobile development-mainly Android, web applications, cloud-based solutions, among so many others.</b></p>
+        <h2>Java Essential Features</h2>
+        <p>Platform Independence (WORA): Java applications compiled code can run on any computer system featuring an interpreter known as a Virtual Machine (JVM). This is also referred to as "Write Once, Run Anywhere" (WORA).</p>
+        <p>Object-Oriented: Java supports the fundamental concepts of object-oriented programming (OOP) like inheritance, encapsulation, polymorphism, and abstraction.</p>
+        <p>Robust and Secure: Java's strong memory management, exception handling, and built-in security features make it a robust choice for critical applications.</p>
+        <p>Multithreading: Java is fully integrated with multi-threaded programming and allows developers to write applications that can perform many tasks at once.</p>
+        <p>Garbage Collection or Automatic Memory Management: Java automatically makes memory allocations and de-allocation by the garbage collector, thus limiting the chances of memory leaks.</p>
+        <p>Libraries and APIs: Java is releasing a complete set of libraries and APIs that ease development of almost everything like networking, file handling, database connectivity, and even design of user interfaces.</p>
+        <p>Java Virtual Machine: It is the engine that enables the applications to run. The virtual machine abstractive type of underlying operating system and, hence, extends integrity of platform independence to Java.</p>
+        <p>Java Development Kit (JDK): The JDK consists of all tools - the Java compiler (javac), Java runtime JRE, and libraries and are needful to carry out the implementing of Java.</p>
+        <h2>Java Editions:</h2>
+        <p>Java SE (Standard Edition): This part of Java is that includes all features of the language and standard libraries, generally used for desktop apps, server-side applications, etc.</p>
+        <p>Java EE (Enterprise Edition): It compiles features that are related to large applications, such as distributed computing, web services, and systems development at an enterprise scale.</p>
+        <p>Java ME (Micro Edition): It's a light version of Java designed to use mobile devices, embedded systems, and IoT-related applications.</p>
+        <h2>Popular Java frameworks:</h2>
+        <p>Spring: It is a full-fledged framework that is used to create enterprise-level applications with several capacities related to injecting dependencies, aspect-oriented programming, and transaction management.</p>
+        <p>Hibernate: ORM tool, which makes database operations simpler by mapping Java classes to database tables.</p>
+        <p>JavaFX: Provides developers with a platform for developing rich Internet applications based on features like 3D graphics, media streaming, and user interface components.</p>
+        <p>Apache Struts: A framework to build a web application that is modeled in the MVC pattern.</p>
+        <h2>Use Cases:</h2>
+        <p>Web Applications: Java is used to power most of the large-scale websites and web services.</p>
+        <p>Development of Android: Most applications on Android are written using Java.</p>
+        <p>This technology is highly used in the very large enterprise systems, such as banking software, CRM platforms, and other financial services.</p>
+        <p>Big Data: Big data solutions largely use Apache Hadoop and Apache Kafka frameworks.</p>
+        <p>Scientific Computing: Java is applied to those applications that require large-scale computation and complex algorithms.</p>
+        <p><b>Overall, Java is still one of the topmost programming languages, mainly because of its versatility, scalability, and good community support.</b></p>
+    </section>
+	
+	<section id="syntax">
+	    <h1>Java Syntax</h1>
+		<h2>Java - Basic Syntax</h2>
+		<p><b>When we consider a Java program, it can be defined as a collection of objects that communicate via invoking each other's methods. Let us now briefly look into what do class, object, methods, and instance variables mean.</b></p>
+		<p><b>Object</b> − Objects have states and behaviors. <b>Example:</b> A dog has states - color, name, breed as well as behavior such as wagging their tail, barking, eating. An object is an instance of a class.</p>
+		<p><b>Class</b> − A class can be defined as a template/blueprint that describes the behavior/state that the object of its type supports.</p>
+		<p><b>Methods</b> − A method is basically a behavior. A class can contain many methods. It is in methods where the logics are written, data is manipulated and all the actions are executed.</p>
+		<p><b>Instance Variables</b> − Each object has its unique set of instance variables. An object's state is created by the values assigned to these instance variables.</p>
+		<h2>About Java Programs</h2>
+		<p><b>It is very important to keep in mind the following points.</b></p>
+		<p><b>Case Sensitivity</b> − Java is case sensitive, which means identifier <b>Hello</b> and <b>hello</b> would have different meaning in Java.</p>
+		<p><b>Class Names</b> − For all class names the first letter should be in Upper Case. If several words are used to form a name of the class, each inner word's first letter should be in Upper Case.<br>
+		<b> Example</b> − class MyFirstJavaClass</p>
+		<p><b>Method Names</b> − All method names should start with a Lower Case letter. If several words are used to form the name of the method, then each inner word's first letter should be in Upper Case.<br>
+		<b> Example</b> − public void myMethodName()</p>
+		<p><b>Program File Name</b> − Name of the program file should exactly match the class name. When saving the file, you should save it using the class name (Remember Java is case sensitive) and append '.java' to the end of the name (if the file name and the class name do not match, your program will not compile). But please make a note that in case you do not have a public class present in the file then file name can be different than class name. It is also not mandatory to have a public class in the file.<br>
+		<b>Example</b> − Assume 'MyFirstJavaProgram' is the class name. Then the file should be saved as 'MyFirstJavaProgram.java'()</p>
+		<p><b>public static void main(String args[])</b> − Java program processing starts from the main() method which is a mandatory part of every Java program.</p>
+		<h2>Java Identifiers</h2>
+		<p><b>All Java components require names. Names used for classes, variables, and methods are called identifiers. In Java, there are several points to remember about identifiers. They are as follows −</b></p>
+		<p>All identifiers should begin with a letter (A to Z or a to z), currency character ($) or an underscore (_).</p>
+		<p>After the first character, identifiers can have any combination of characters.</p>
+		<p>A key word cannot be used as an identifier.</p>
+		<p>Most importantly, identifiers are case sensitive.</p>
+		<p>Examples of legal identifiers: age, $salary, _value, __1_value.</p>
+		<p>Examples of illegal identifiers: 123abc, -salary.</p>
+		<h2>Java Modifiers</h2>
+		<p><b>Like other languages, it is possible to modify classes, methods, etc., by using modifiers. There are two categories of modifiers −</b></p>
+		<p><b>Access Modifiers</b> − default, public , protected, private</p>
+		<p><b>Non-access Modifiers</b> − final, abstract, strictfp</p>
+		<h2>Java Variables</h2>
+		<p><b>Following are the types of variables in Java −</b></p>
+		<p>Local Variables</p>
+		<p>Class Variables (Static Variables)</p>
+		<p>Instance Variables (Non-static Variables)</p>
+		<h2>Java Arrays</h2>
+		<p>Arrays are objects that store multiple variables of the same type. However, an array itself is an object on the heap. We will look into how to declare, construct, and initialize in the upcoming chapters.</p>
+		<h2>Java Enums</h2>
+		<p>Enums were introduced in Java 5.0. Enums restrict a variable to have one of only a few predefined values. The values in this enumerated list are called enums.</p>
+		<p>With the use of enums it is possible to reduce the number of bugs in your code.</p>
+		<p>For example, if we consider an application for a fresh juice shop, it would be possible to restrict the glass size to small, medium, and large. This would make sure that it would not allow anyone to order any size other than small, medium, or large.</p>
+	</section>
+	
+    <footer>
+        © 2024 Introduction to Java. All rights reserved.
+    </footer>
+</body>
+</html>
